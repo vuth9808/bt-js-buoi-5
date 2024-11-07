@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tính Tiền Điện</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tính Tiền Điện</h1>
+    <form id="electricityForm">
+      <label for="name">Tên khách hàng:</label>
+      <input type="text" id="name" required>
+
+      <label for="usage">Số kWh tiêu thụ:</label>
+      <input type="number" id="usage" step="1" min="0" required>
+
+      <button type="button" onclick="calculateElectricityBill()">Tính tiền điện</button>
+    </form>
+    <p id="result"></p>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>

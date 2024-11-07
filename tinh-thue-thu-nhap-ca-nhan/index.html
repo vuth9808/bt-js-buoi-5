@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy Tính Thuế Thu Nhập Cá Nhân</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Máy Tính Thuế Thu Nhập</h1>
+        <label for="name">Họ tên:</label>
+        <input type="text" id="name" placeholder="Nhập họ tên của bạn">
+
+        <label for="totalIncome">Tổng Thu Nhập Hàng Năm (triệu VNĐ):</label>
+        <input type="number" id="totalIncome" placeholder="Nhập tổng thu nhập">
+
+        <label for="dependents">Số Người Phụ Thuộc:</label>
+        <input type="number" id="dependents" placeholder="Nhập số người phụ thuộc">
+
+        <button onclick="calculateTax()">Tính Thuế</button>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
